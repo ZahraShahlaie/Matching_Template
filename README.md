@@ -1,7 +1,13 @@
 
 
 # Template Matching 
-This project involves creating a dataset for training a YOLOv8 object detection model by generating composite images of various input images overlaid on different background images. The project utilizes multiple libraries and tools for image processing, augmentation, and model training.
+Object Detection Project Using Limited Images
+
+This project aims to detect objects in images using a very limited amount of input data. I have started this project with four different images of mice with varying colors and patterns. One of the features of this project is the use of diverse and varied inputs, which enhances the diversity of the training dataset and improves the model's accuracy.
+
+In this project, I have used ten different images as backgrounds. These backgrounds are combined with various input images to create a comprehensive and diverse dataset for training the YOLOv8 model. To achieve this, several libraries and tools for image processing, data augmentation, and model training have been utilized.
+
+This project allows me to create a rich and diverse training dataset with minimal input data.
 
 ## Table of Contents
 1. [Project Setup](#project-setup)
@@ -21,12 +27,49 @@ First, clone the required repository and install necessary libraries. This invol
 
 ## Directory Structure
 
-Create the necessary directories for storing background images, training data, validation data, and test data. This organization helps keep the project structured and makes it easier to manage the different datasets.
+Create the necessary directories for storing background images, training data, validation data, and test data.
 
 ## Downloading Data
 
 Download the required project data, including input images, background images, and test images from Google Drive. This ensures you have all the necessary resources for the project.
 
+## Background Generation
+
+1. **Creating Gradient Backgrounds**
+
+   Initially, gradient background images are generated using the `create_back(r_channel, g_channel, b_channel)` function. This function utilizes predefined color channels (`r_channel, g_channel, b_channel`) and fixed colors such as white, black, yellow, red, and blue to produce gradient background images sized at 640x640 pixels. For each predefined color, a gradient background image is created, and its name and path are updated accordingly.
+   
+   Sample images:
+   
+   [![Uploading image.png…]()]
+
+2. **Incorporating Downloaded Background Images**
+
+   In this stage, alongside gradient color backgrounds, 10 challenging images are used as additional backgrounds. These images are downloaded from other sources and moved to the `backgrounds_images` folder.
+
+   View images:
+   
+   [Add link or describe how to view the images]
+
+3. **Applying Random Transformations to Input Images**
+
+   Using the Augmentor library, random transformations are applied to input images to increase dataset diversity. These transformations include rotation, horizontal and vertical flips, contrast and brightness adjustments, zooming, distortion, and random cropping.
+
+   First, a pipeline is created to apply these random transformations to input images. Then, different transformations are added to the pipeline with specified probabilities:
+   - `rotate`: Random rotation with a defined probability and maximum rotation angle.
+   - `flip_left_right`: Horizontal flipping with a defined probability.
+   - `flip_top_bottom`: Vertical flipping with a defined probability.
+   - `random_contrast`: Random contrast adjustment with a defined probability and range.
+   - `random_brightness`: Random brightness adjustment with a defined probability and range.
+   - `zoom_random`: Random zoom with a defined probability and area percentage.
+   - `random_distortion`: Random distortion with a defined probability and grid size.
+   - `shear`: Random shearing with a defined probability and maximum shear angle.
+
+   Finally, a specified number of images (here, 50 images) are generated with these random transformations applied.
+
+   [Add any additional details or clarifications necessary]
+
+   
 ## Generating Backgrounds
 
 Generate background images using the `GradientGenerator` script. This step involves creating various gradient backgrounds that will be used later to create composite images.
