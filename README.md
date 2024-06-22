@@ -96,6 +96,20 @@ This project enables us to generate a rich and diverse training set of images us
 ### Contribution
 Contributions are welcome! Please fork the repository, make your changes, and submit a pull request.
 
+To enhance the project and add new capabilities, you can consider the following approaches:
+
+1. **Utilizing ImageNet and other images as background**:
+   - Using ImageNet to check images and extract suitable backgrounds for blending with input images.
+   - Implementing an automated system to select appropriate backgrounds based on categories available in ImageNet.
+
+2. **Implementing YOLOv10**:
+   - Testing and applying YOLOv10 instead of YOLOv8 for better performance evaluation and accuracy.
+   - New features and potential improvements in the YOLOv10 architecture, such as higher object detection accuracy, faster processing speed, and network training.
+
+3. **Upscaling Images using Seamless Cloning**:
+   - Implementing more advanced methods for upscaling images using Seamless Cloning in OpenCV.
+   - Improving the accuracy and quality of images produced by this method through process and method optimizations.
+
 ## Acknowledgements
 - [GradientGenerator Repository](https://github.com/HYOUG/GradientGenerator)
 - [YOLOv8 by Ultralytics](https://github.com/ultralytics/ultralytics)
