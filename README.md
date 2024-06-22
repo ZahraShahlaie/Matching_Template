@@ -101,12 +101,14 @@ To enhance the project and add new capabilities, you can consider the following 
 1. **Utilizing ImageNet and other images as background**:
    - Using ImageNet to check images and extract suitable backgrounds for blending with input images.
    - Implementing an automated system to select appropriate backgrounds based on categories available in ImageNet.
+     
+ 2.  **Use image captioning for create background
 
-2. **Implementing YOLOv10**:
+3.  **Implementing YOLOv10**:
    - Testing and applying YOLOv10 instead of YOLOv8 for better performance evaluation and accuracy.
    - New features and potential improvements in the YOLOv10 architecture, such as higher object detection accuracy, faster processing speed, and network training.
 
-3. **Upscaling Images using Seamless Cloning**:
+4. **Upscaling Images using Seamless Cloning**:
    - Implementing more advanced methods for upscaling images using Seamless Cloning in OpenCV.
    - Improving the accuracy and quality of images produced by this method through process and method optimizations.
 
