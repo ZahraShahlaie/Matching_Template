@@ -19,7 +19,13 @@ This project allows me to create a rich and diverse training dataset with minima
 9. [Model Evaluation](#model-evaluation)
 10. [Model Inference](#model-inference)
 11. [Results and Applications](#results-and-applications)
-12. [Acknowledgements](#acknowledgements)
+12. [Requirements](#Requirements)
+13. [Contribution](#Contribution)
+14. [Acknowledgements](#acknowledgements)
+15. [Contact](#Contact)
+16. [References](#References)
+
+
 
 ## Project Setup
 First, clone the required repository and install necessary libraries. This involves using Git to clone the `GradientGenerator` repository and installing Python packages like `ultralytics`, `gdown`, `Augmentor`, and `tqdm`.
@@ -76,6 +82,28 @@ The trained model is used for predicting objects in new images. Prediction resul
 ## Results and Applications
 This project enables us to generate a rich and diverse training set of images using a limited number of input images, thereby improving the quality and accuracy of object detection models. The trained model can accurately detect desired objects in new images.
 
+### Requirements
+- Python 3.x
+- Ultralytics
+- Augmentor
+- YOLO
+- tqdm
+- NumPy
+- Pandas
+- gdown
+- random
+
+### Contribution
+Contributions are welcome! Please fork the repository, make your changes, and submit a pull request.
+
 ## Acknowledgements
 - [GradientGenerator Repository](https://github.com/HYOUG/GradientGenerator)
 - [YOLOv8 by Ultralytics](https://github.com/ultralytics/ultralytics)
+
+### Contact
+For any inquiries or support, please contact [za.shahlaie@gmail.com](mailto:za.shahlaie@gmail.com).
+
+### References
+- [Blending images using OpenCV](https://medium.com/featurepreneur/blending-images-using-opencv-bfc9ab3697b7)
+- [Augmentation settings](https://docs.ultralytics.com/usage/cfg/#augmentation-settings)
+- (https://rumn.medium.com/yolo-data-augmentation-explained-turbocharge-your-object-detection-model-94c33278303a)
