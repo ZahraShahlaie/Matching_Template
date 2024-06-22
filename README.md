@@ -102,7 +102,7 @@ To enhance the project and add new capabilities, you can consider the following 
    - Using ImageNet to check images and extract suitable backgrounds for blending with input images.
    - Implementing an automated system to select appropriate backgrounds based on categories available in ImageNet.
      
- 2.  **Use image captioning for create background
+ 2.  **Use image captioning for create background**
 
 3.  **Implementing YOLOv10**:
    - Testing and applying YOLOv10 instead of YOLOv8 for better performance evaluation and accuracy.
